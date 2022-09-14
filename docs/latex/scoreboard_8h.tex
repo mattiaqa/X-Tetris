@@ -1,0 +1,68 @@
+\hypertarget{scoreboard_8h}{}\doxysection{/\+Users/mattiaquagliotto/\+Documents/\+Università/\+X\+\_\+\+Tetris/\+Libraries/scoreboard.h File Reference}
+\label{scoreboard_8h}\index{/Users/mattiaquagliotto/Documents/Università/X\_Tetris/Libraries/scoreboard.h@{/Users/mattiaquagliotto/Documents/Università/X\_Tetris/Libraries/scoreboard.h}}
+
+
+The following file contains all auxiliary functions for the scoreboard of the game.  
+
+
+{\ttfamily \#include \char`\"{}../\+Libraries/raylib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Libraries/data\+Structure.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Libraries/palette.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structentry}{entry}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{scoreboard_8h_a1c49d889ff2ccffd74ecb0e8b6bb99d8}{save\+To\+File}} (int points, char $\ast$nickname)
+\begin{DoxyCompactList}\small\item\em saves the points in a file \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{scoreboard_8h_a97d82c18134b0f4b48c87c6b8ad1b960}{print\+Scoreboard}} (Font font, game\+State $\ast$state, int $\ast$scoreboard\+Loaded, Texture2D back\+\_\+arrow)
+\begin{DoxyCompactList}\small\item\em print the scoreboard \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The following file contains all auxiliary functions for the scoreboard of the game. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{scoreboard_8h_a97d82c18134b0f4b48c87c6b8ad1b960}\label{scoreboard_8h_a97d82c18134b0f4b48c87c6b8ad1b960}} 
+\index{scoreboard.h@{scoreboard.h}!printScoreboard@{printScoreboard}}
+\index{printScoreboard@{printScoreboard}!scoreboard.h@{scoreboard.h}}
+\doxysubsubsection{\texorpdfstring{printScoreboard()}{printScoreboard()}}
+{\footnotesize\ttfamily void print\+Scoreboard (\begin{DoxyParamCaption}\item[{Font}]{font,  }\item[{game\+State $\ast$}]{state,  }\item[{int $\ast$}]{scoreboard\+Loaded,  }\item[{Texture2D}]{back\+\_\+arrow }\end{DoxyParamCaption})}
+
+
+
+print the scoreboard 
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & \\
+\hline
+{\em state} & \\
+\hline
+{\em scoreboard\+Loaded} & \\
+\hline
+{\em back\+\_\+arrow} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{scoreboard_8h_a1c49d889ff2ccffd74ecb0e8b6bb99d8}\label{scoreboard_8h_a1c49d889ff2ccffd74ecb0e8b6bb99d8}} 
+\index{scoreboard.h@{scoreboard.h}!saveToFile@{saveToFile}}
+\index{saveToFile@{saveToFile}!scoreboard.h@{scoreboard.h}}
+\doxysubsubsection{\texorpdfstring{saveToFile()}{saveToFile()}}
+{\footnotesize\ttfamily void save\+To\+File (\begin{DoxyParamCaption}\item[{int}]{points,  }\item[{char $\ast$}]{nickname }\end{DoxyParamCaption})}
+
+
+
+saves the points in a file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em points} & \\
+\hline
+{\em nickname} & \\
+\hline
+\end{DoxyParams}

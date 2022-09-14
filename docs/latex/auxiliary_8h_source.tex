@@ -1,0 +1,37 @@
+\hypertarget{auxiliary_8h_source}{}\doxysection{auxiliary.\+h}
+\label{auxiliary_8h_source}\index{/Users/mattiaquagliotto/Documents/Università/X\_Tetris/Libraries/auxiliary.h@{/Users/mattiaquagliotto/Documents/Università/X\_Tetris/Libraries/auxiliary.h}}
+\mbox{\hyperlink{auxiliary_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#ifndef X\_TETRIS\_AUXILIARY\_H}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#define X\_TETRIS\_AUXILIARY\_H}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}../Libraries/raylib.h"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}../Libraries/palette.h"{}}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{17 Color \mbox{\hyperlink{auxiliary_8h_aceb91fa44d7301e20b96fb55801ba769}{getColor}}();}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{25 \textcolor{keywordtype}{int} \mbox{\hyperlink{auxiliary_8h_ac25de5607c3e3194019b8067ee09739b}{bottomCollision}}(\textcolor{keyword}{const} fieldType *field, \mbox{\hyperlink{structpiece_type}{pieceType}} *piece);}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{33 \textcolor{keywordtype}{int} \mbox{\hyperlink{auxiliary_8h_a9be6e4487629870bb8918d86714818e3}{leftCollision}}(\mbox{\hyperlink{structpiece_type}{pieceType}} *piece, \textcolor{keyword}{const} fieldType *field);}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{41 \textcolor{keywordtype}{int} \mbox{\hyperlink{auxiliary_8h_a7359e907736534652807e609c8529e9f}{rightCollision}}(\mbox{\hyperlink{structpiece_type}{pieceType}} *piece, \textcolor{keyword}{const} fieldType *field);}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{48 \textcolor{keywordtype}{void} \mbox{\hyperlink{auxiliary_8h_a88a2c8b11b224b0f626ab1d8c633906d}{savePiece}}(fieldType *field, \mbox{\hyperlink{structpiece_type}{pieceType}} *piece);}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{59 \textcolor{keywordtype}{void} \mbox{\hyperlink{auxiliary_8h_a501f6da315b77aed2e36031b69bfb477}{checkFullRow}}(fieldType *field\_player1, fieldType *field\_player2, \textcolor{keywordtype}{int} *points\_pl1, \textcolor{keywordtype}{int} *points\_pl2, \textcolor{keywordtype}{int} is\_multiplayer, \textcolor{keywordtype}{int} turn);}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{71 \textcolor{keywordtype}{void} \mbox{\hyperlink{auxiliary_8h_aa4280ab3a4d0bac17427df4ee9665eea}{printGameOver}}(Font font, \textcolor{keywordtype}{int} points\_pl1, \textcolor{keywordtype}{int} points\_pl2, \textcolor{keywordtype}{int} turn, \textcolor{keywordtype}{int} is\_multiplayer, \textcolor{keywordtype}{char} *nickname1, \textcolor{keywordtype}{char} *nickname2);}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{85 \textcolor{keywordtype}{void} \mbox{\hyperlink{auxiliary_8h_a71151f56b2420d803dfdbad27206deb6}{printWin}}(Font font, \textcolor{keywordtype}{int} points\_pl1, \textcolor{keywordtype}{int} points\_pl2, \textcolor{keywordtype}{int} turn, \textcolor{keywordtype}{int} is\_multiplayer, \textcolor{keywordtype}{char} *nickname1, \textcolor{keywordtype}{char} *nickname2, Texture2D trofeo, Texture2D back\_arrow);}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{102 \textcolor{keywordtype}{void} \mbox{\hyperlink{auxiliary_8h_a234121ae3e6a970d005578b0a3178e1f}{initGame}}(\textcolor{keywordtype}{int} *isPieceMoving, \textcolor{keywordtype}{int} *pieceID, \textcolor{keywordtype}{int} *points\_pl1, \textcolor{keywordtype}{int} *points\_pl2, \textcolor{keywordtype}{int} *gameOver,}
+\DoxyCodeLine{103               \textcolor{keywordtype}{int} *saved, \textcolor{keywordtype}{int} *gameStarted, \textcolor{keywordtype}{int} *turn, \textcolor{keywordtype}{int} *isWin, fieldType *field\_player1, fieldType *field\_player2,}
+\DoxyCodeLine{104               \mbox{\hyperlink{structpiece_type}{pieceType}} *activePiece);}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{111 \textcolor{keywordtype}{int} \mbox{\hyperlink{auxiliary_8h_a13fa8d311fda78a449b34655e88e8a64}{win}}(\mbox{\hyperlink{structpiece_info}{pieceInfo}} *infoPieces);}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{113 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{114 }
+
+\end{DoxyCode}

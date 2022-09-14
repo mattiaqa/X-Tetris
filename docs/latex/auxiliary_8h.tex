@@ -1,0 +1,265 @@
+\hypertarget{auxiliary_8h}{}\doxysection{/\+Users/mattiaquagliotto/\+Documents/\+Università/\+X\+\_\+\+Tetris/\+Libraries/auxiliary.h File Reference}
+\label{auxiliary_8h}\index{/Users/mattiaquagliotto/Documents/Università/X\_Tetris/Libraries/auxiliary.h@{/Users/mattiaquagliotto/Documents/Università/X\_Tetris/Libraries/auxiliary.h}}
+
+
+The following file contains all auxiliary functions for the operation of the game.  
+
+
+{\ttfamily \#include \char`\"{}../\+Libraries/raylib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Libraries/palette.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Color \mbox{\hyperlink{auxiliary_8h_aceb91fa44d7301e20b96fb55801ba769}{get\+Color}} ()
+\begin{DoxyCompactList}\small\item\em returns a colour based on the id \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{auxiliary_8h_ac25de5607c3e3194019b8067ee09739b}{bottom\+Collision}} (const field\+Type $\ast$field, \mbox{\hyperlink{structpiece_type}{piece\+Type}} $\ast$piece)
+\begin{DoxyCompactList}\small\item\em check whether a collision occurs in the bottom with the edge or with another piece \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{auxiliary_8h_a9be6e4487629870bb8918d86714818e3}{left\+Collision}} (\mbox{\hyperlink{structpiece_type}{piece\+Type}} $\ast$piece, const field\+Type $\ast$field)
+\begin{DoxyCompactList}\small\item\em check whether the piece can be moved to the left \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{auxiliary_8h_a7359e907736534652807e609c8529e9f}{right\+Collision}} (\mbox{\hyperlink{structpiece_type}{piece\+Type}} $\ast$piece, const field\+Type $\ast$field)
+\begin{DoxyCompactList}\small\item\em check whether the piece can be moved to the right \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{auxiliary_8h_a88a2c8b11b224b0f626ab1d8c633906d}{save\+Piece}} (field\+Type $\ast$field, \mbox{\hyperlink{structpiece_type}{piece\+Type}} $\ast$piece)
+\begin{DoxyCompactList}\small\item\em saves the current piece in the field matrix \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{auxiliary_8h_a501f6da315b77aed2e36031b69bfb477}{check\+Full\+Row}} (field\+Type $\ast$field\+\_\+player1, field\+Type $\ast$field\+\_\+player2, int $\ast$points\+\_\+pl1, int $\ast$points\+\_\+pl2, int is\+\_\+multiplayer, int turn)
+\begin{DoxyCompactList}\small\item\em checks whether one or more rows have been completed, if so, points are awarded to the player who is playing \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{auxiliary_8h_aa4280ab3a4d0bac17427df4ee9665eea}{print\+Game\+Over}} (Font font, int points\+\_\+pl1, int points\+\_\+pl2, int turn, int is\+\_\+multiplayer, char $\ast$nickname1, char $\ast$nickname2)
+\item 
+void \mbox{\hyperlink{auxiliary_8h_a71151f56b2420d803dfdbad27206deb6}{print\+Win}} (Font font, int points\+\_\+pl1, int points\+\_\+pl2, int turn, int is\+\_\+multiplayer, char $\ast$nickname1, char $\ast$nickname2, Texture2D trofeo, Texture2D back\+\_\+arrow)
+\item 
+void \mbox{\hyperlink{auxiliary_8h_a234121ae3e6a970d005578b0a3178e1f}{init\+Game}} (int $\ast$is\+Piece\+Moving, int $\ast$piece\+ID, int $\ast$points\+\_\+pl1, int $\ast$points\+\_\+pl2, int $\ast$game\+Over, int $\ast$saved, int $\ast$game\+Started, int $\ast$turn, int $\ast$is\+Win, field\+Type $\ast$field\+\_\+player1, field\+Type $\ast$field\+\_\+player2, \mbox{\hyperlink{structpiece_type}{piece\+Type}} $\ast$active\+Piece)
+\begin{DoxyCompactList}\small\item\em initialises game variables \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{auxiliary_8h_a13fa8d311fda78a449b34655e88e8a64}{win}} (\mbox{\hyperlink{structpiece_info}{piece\+Info}} $\ast$info\+Pieces)
+\begin{DoxyCompactList}\small\item\em checks whether the player has won by checking whether all the pieces have been used \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The following file contains all auxiliary functions for the operation of the game. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{auxiliary_8h_ac25de5607c3e3194019b8067ee09739b}\label{auxiliary_8h_ac25de5607c3e3194019b8067ee09739b}} 
+\index{auxiliary.h@{auxiliary.h}!bottomCollision@{bottomCollision}}
+\index{bottomCollision@{bottomCollision}!auxiliary.h@{auxiliary.h}}
+\doxysubsubsection{\texorpdfstring{bottomCollision()}{bottomCollision()}}
+{\footnotesize\ttfamily int bottom\+Collision (\begin{DoxyParamCaption}\item[{const field\+Type $\ast$}]{field,  }\item[{\mbox{\hyperlink{structpiece_type}{piece\+Type}} $\ast$}]{piece }\end{DoxyParamCaption})}
+
+
+
+check whether a collision occurs in the bottom with the edge or with another piece 
+
+
+\begin{DoxyParams}{Parameters}
+{\em field} & player\textquotesingle{}s field \\
+\hline
+{\em piece} & piece to be checked if it collides \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if there is a collision, 0 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{auxiliary_8h_a501f6da315b77aed2e36031b69bfb477}\label{auxiliary_8h_a501f6da315b77aed2e36031b69bfb477}} 
+\index{auxiliary.h@{auxiliary.h}!checkFullRow@{checkFullRow}}
+\index{checkFullRow@{checkFullRow}!auxiliary.h@{auxiliary.h}}
+\doxysubsubsection{\texorpdfstring{checkFullRow()}{checkFullRow()}}
+{\footnotesize\ttfamily void check\+Full\+Row (\begin{DoxyParamCaption}\item[{field\+Type $\ast$}]{field\+\_\+player1,  }\item[{field\+Type $\ast$}]{field\+\_\+player2,  }\item[{int $\ast$}]{points\+\_\+pl1,  }\item[{int $\ast$}]{points\+\_\+pl2,  }\item[{int}]{is\+\_\+multiplayer,  }\item[{int}]{turn }\end{DoxyParamCaption})}
+
+
+
+checks whether one or more rows have been completed, if so, points are awarded to the player who is playing 
+
+
+\begin{DoxyParams}{Parameters}
+{\em field\+\_\+player1} & \\
+\hline
+{\em field\+\_\+player2} & if is not multiplayer, this parameter can be NULL \\
+\hline
+{\em points\+\_\+pl1} & \\
+\hline
+{\em points\+\_\+pl2} & \\
+\hline
+{\em is\+\_\+multiplayer} & \\
+\hline
+{\em turn} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{auxiliary_8h_aceb91fa44d7301e20b96fb55801ba769}\label{auxiliary_8h_aceb91fa44d7301e20b96fb55801ba769}} 
+\index{auxiliary.h@{auxiliary.h}!getColor@{getColor}}
+\index{getColor@{getColor}!auxiliary.h@{auxiliary.h}}
+\doxysubsubsection{\texorpdfstring{getColor()}{getColor()}}
+{\footnotesize\ttfamily Color get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns a colour based on the id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id\+Color} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+RGB color 
+\end{DoxyReturn}
+\mbox{\Hypertarget{auxiliary_8h_a234121ae3e6a970d005578b0a3178e1f}\label{auxiliary_8h_a234121ae3e6a970d005578b0a3178e1f}} 
+\index{auxiliary.h@{auxiliary.h}!initGame@{initGame}}
+\index{initGame@{initGame}!auxiliary.h@{auxiliary.h}}
+\doxysubsubsection{\texorpdfstring{initGame()}{initGame()}}
+{\footnotesize\ttfamily void init\+Game (\begin{DoxyParamCaption}\item[{int $\ast$}]{is\+Piece\+Moving,  }\item[{int $\ast$}]{piece\+ID,  }\item[{int $\ast$}]{points\+\_\+pl1,  }\item[{int $\ast$}]{points\+\_\+pl2,  }\item[{int $\ast$}]{game\+Over,  }\item[{int $\ast$}]{saved,  }\item[{int $\ast$}]{game\+Started,  }\item[{int $\ast$}]{turn,  }\item[{int $\ast$}]{is\+Win,  }\item[{field\+Type $\ast$}]{field\+\_\+player1,  }\item[{field\+Type $\ast$}]{field\+\_\+player2,  }\item[{\mbox{\hyperlink{structpiece_type}{piece\+Type}} $\ast$}]{active\+Piece }\end{DoxyParamCaption})}
+
+
+
+initialises game variables 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Piece\+Moving} & \\
+\hline
+{\em piece\+ID} & \\
+\hline
+{\em points\+\_\+pl1} & \\
+\hline
+{\em points\+\_\+pl2} & \\
+\hline
+{\em game\+Over} & \\
+\hline
+{\em saved} & \\
+\hline
+{\em game\+Started} & \\
+\hline
+{\em turn} & \\
+\hline
+{\em is\+Win} & \\
+\hline
+{\em field\+\_\+player1} & \\
+\hline
+{\em field\+\_\+player2} & \\
+\hline
+{\em active\+Piece} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{auxiliary_8h_a9be6e4487629870bb8918d86714818e3}\label{auxiliary_8h_a9be6e4487629870bb8918d86714818e3}} 
+\index{auxiliary.h@{auxiliary.h}!leftCollision@{leftCollision}}
+\index{leftCollision@{leftCollision}!auxiliary.h@{auxiliary.h}}
+\doxysubsubsection{\texorpdfstring{leftCollision()}{leftCollision()}}
+{\footnotesize\ttfamily int left\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpiece_type}{piece\+Type}} $\ast$}]{piece,  }\item[{const field\+Type $\ast$}]{field }\end{DoxyParamCaption})}
+
+
+
+check whether the piece can be moved to the left 
+
+
+\begin{DoxyParams}{Parameters}
+{\em piece} & piece to be checked if it collides \\
+\hline
+{\em field} & player\textquotesingle{}s field \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if there is a collision, 0 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{auxiliary_8h_aa4280ab3a4d0bac17427df4ee9665eea}\label{auxiliary_8h_aa4280ab3a4d0bac17427df4ee9665eea}} 
+\index{auxiliary.h@{auxiliary.h}!printGameOver@{printGameOver}}
+\index{printGameOver@{printGameOver}!auxiliary.h@{auxiliary.h}}
+\doxysubsubsection{\texorpdfstring{printGameOver()}{printGameOver()}}
+{\footnotesize\ttfamily void print\+Game\+Over (\begin{DoxyParamCaption}\item[{Font}]{font,  }\item[{int}]{points\+\_\+pl1,  }\item[{int}]{points\+\_\+pl2,  }\item[{int}]{turn,  }\item[{int}]{is\+\_\+multiplayer,  }\item[{char $\ast$}]{nickname1,  }\item[{char $\ast$}]{nickname2 }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & \\
+\hline
+{\em points\+\_\+pl1} & \\
+\hline
+{\em points\+\_\+pl2} & \\
+\hline
+{\em turn} & \\
+\hline
+{\em is\+\_\+multiplayer} & \\
+\hline
+{\em nickname1} & \\
+\hline
+{\em nickname2} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{auxiliary_8h_a71151f56b2420d803dfdbad27206deb6}\label{auxiliary_8h_a71151f56b2420d803dfdbad27206deb6}} 
+\index{auxiliary.h@{auxiliary.h}!printWin@{printWin}}
+\index{printWin@{printWin}!auxiliary.h@{auxiliary.h}}
+\doxysubsubsection{\texorpdfstring{printWin()}{printWin()}}
+{\footnotesize\ttfamily void print\+Win (\begin{DoxyParamCaption}\item[{Font}]{font,  }\item[{int}]{points\+\_\+pl1,  }\item[{int}]{points\+\_\+pl2,  }\item[{int}]{turn,  }\item[{int}]{is\+\_\+multiplayer,  }\item[{char $\ast$}]{nickname1,  }\item[{char $\ast$}]{nickname2,  }\item[{Texture2D}]{trofeo,  }\item[{Texture2D}]{back\+\_\+arrow }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & \\
+\hline
+{\em points\+\_\+pl1} & \\
+\hline
+{\em points\+\_\+pl2} & \\
+\hline
+{\em turn} & \\
+\hline
+{\em is\+\_\+multiplayer} & \\
+\hline
+{\em nickname1} & \\
+\hline
+{\em nickname2} & \\
+\hline
+{\em trofeo} & \\
+\hline
+{\em back\+\_\+arrow} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{auxiliary_8h_a7359e907736534652807e609c8529e9f}\label{auxiliary_8h_a7359e907736534652807e609c8529e9f}} 
+\index{auxiliary.h@{auxiliary.h}!rightCollision@{rightCollision}}
+\index{rightCollision@{rightCollision}!auxiliary.h@{auxiliary.h}}
+\doxysubsubsection{\texorpdfstring{rightCollision()}{rightCollision()}}
+{\footnotesize\ttfamily int right\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpiece_type}{piece\+Type}} $\ast$}]{piece,  }\item[{const field\+Type $\ast$}]{field }\end{DoxyParamCaption})}
+
+
+
+check whether the piece can be moved to the right 
+
+
+\begin{DoxyParams}{Parameters}
+{\em piece} & piece to be checked if it collides \\
+\hline
+{\em field} & player\textquotesingle{}s field \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if there is a collision, 0 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{auxiliary_8h_a88a2c8b11b224b0f626ab1d8c633906d}\label{auxiliary_8h_a88a2c8b11b224b0f626ab1d8c633906d}} 
+\index{auxiliary.h@{auxiliary.h}!savePiece@{savePiece}}
+\index{savePiece@{savePiece}!auxiliary.h@{auxiliary.h}}
+\doxysubsubsection{\texorpdfstring{savePiece()}{savePiece()}}
+{\footnotesize\ttfamily void save\+Piece (\begin{DoxyParamCaption}\item[{field\+Type $\ast$}]{field,  }\item[{\mbox{\hyperlink{structpiece_type}{piece\+Type}} $\ast$}]{piece }\end{DoxyParamCaption})}
+
+
+
+saves the current piece in the field matrix 
+
+
+\begin{DoxyParams}{Parameters}
+{\em field} & player\textquotesingle{}s field \\
+\hline
+{\em piece} & piece to be saved \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{auxiliary_8h_a13fa8d311fda78a449b34655e88e8a64}\label{auxiliary_8h_a13fa8d311fda78a449b34655e88e8a64}} 
+\index{auxiliary.h@{auxiliary.h}!win@{win}}
+\index{win@{win}!auxiliary.h@{auxiliary.h}}
+\doxysubsubsection{\texorpdfstring{win()}{win()}}
+{\footnotesize\ttfamily int win (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpiece_info}{piece\+Info}} $\ast$}]{info\+Pieces }\end{DoxyParamCaption})}
+
+
+
+checks whether the player has won by checking whether all the pieces have been used 
+
+
+\begin{DoxyParams}{Parameters}
+{\em info\+Pieces} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}

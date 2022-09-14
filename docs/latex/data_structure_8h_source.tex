@@ -1,0 +1,54 @@
+\hypertarget{data_structure_8h_source}{}\doxysection{data\+Structure.\+h}
+\label{data_structure_8h_source}\index{/Users/mattiaquagliotto/Documents/Università/X\_Tetris/Libraries/dataStructure.h@{/Users/mattiaquagliotto/Documents/Università/X\_Tetris/Libraries/dataStructure.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef X\_TETRIS\_DATASTRUCTURE\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define X\_TETRIS\_DATASTRUCTURE\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}raylib.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}../Libraries/palette.h"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#define TETRAMINO\_DIM 4}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define FIELD\_COLS 10}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define FIELD\_ROW 15}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#define SCREEN\_WIDTH 1000}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define SCREEN\_HEIGHT 740}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#define SCREEN\_WIDTH\_MULTI 1440}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#define SCREEN\_HEIGHT\_MULTI 800}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{keyword}{typedef} \textcolor{keyword}{enum}\{}
+\DoxyCodeLine{19     TETRAMINO,}
+\DoxyCodeLine{20     MOVING,}
+\DoxyCodeLine{21     EMPTY,}
+\DoxyCodeLine{22     INTERNAL\_EMPTY}
+\DoxyCodeLine{23 \} fieldType;}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{keyword}{typedef} \textcolor{keyword}{enum}\{}
+\DoxyCodeLine{26     MENU,}
+\DoxyCodeLine{27     SINGLEPLAYER,}
+\DoxyCodeLine{28     COMMANDS,}
+\DoxyCodeLine{29     CHOOSE\_NAME,}
+\DoxyCodeLine{30     CHOOSE\_MULTIPLAYER,}
+\DoxyCodeLine{31     MULTIPLAYER\_PVP,}
+\DoxyCodeLine{32     MULTIPLAYER\_PVE,}
+\DoxyCodeLine{33     SCOREBOARD,}
+\DoxyCodeLine{34     EXIT}
+\DoxyCodeLine{35 \} gameState;}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{37 \textcolor{keyword}{typedef} \textcolor{keyword}{struct }\{}
+\DoxyCodeLine{38     \textcolor{keywordtype}{int} pieceID;}
+\DoxyCodeLine{39     \textcolor{keywordtype}{int} remaining;}
+\DoxyCodeLine{40 \}\mbox{\hyperlink{structpiece_info}{pieceInfo}};}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42 \textcolor{keyword}{typedef} \textcolor{keyword}{struct}\{}
+\DoxyCodeLine{43     fieldType structure[16];}
+\DoxyCodeLine{44     Color color;}
+\DoxyCodeLine{45     Vector2 piecePosition;}
+\DoxyCodeLine{46 \}\mbox{\hyperlink{structpiece_type}{pieceType}};}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

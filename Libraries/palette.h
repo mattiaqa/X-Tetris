@@ -1,0 +1,31 @@
+
+#ifndef X_TETRIS_PALETTE_H
+#define X_TETRIS_PALETTE_H
+
+#define BLACK_SWAG 1
+#define CREAMY_WHITE 2
+#define BLUETTE 3
+#define GRENETTE 4
+#define ROSETTE 5
+#define YELLOWETTE 6
+#define UGLY_COLOR 7
+#define ULTRA_SWAG_GRAY 8
+#define SEAGREEN 9
+#define DARK_SEAGREEN 10
+#define VERYDARK_SEAGREEN 11
+#define AZZURRO3 12
+#define AZZURRO4 13
+#define AZZURRO5 14
+#define AZZURRO6 15
+#define AZZURRO7 16
+#define AZZURRO8 17
+#define AZZURRO9 18
+#define BLACK_SWAG_LIGHT 19
+#define BLACK_SWAG_L 20
+#define YELLOW 21
+#define LIGHTGRAY 22
+#define GRAY 23
+#define RED 24
+#define RANDOM_COLOR 25
+
+#endif //X_TETRIS_PALETTE_H

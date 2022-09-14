@@ -1,0 +1,125 @@
+\hypertarget{field_8h}{}\doxysection{/\+Users/mattiaquagliotto/\+Documents/\+Università/\+X\+\_\+\+Tetris/\+Libraries/field.h File Reference}
+\label{field_8h}\index{/Users/mattiaquagliotto/Documents/Università/X\_Tetris/Libraries/field.h@{/Users/mattiaquagliotto/Documents/Università/X\_Tetris/Libraries/field.h}}
+
+
+The following file contains all functions concerning the playing field.  
+
+
+{\ttfamily \#include \char`\"{}../\+Libraries/raylib.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Libraries/data\+Structure.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Libraries/palette.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{field_8h_a2d4287324b04dc7063960a131a9ea4f8}{print\+Field}} (const field\+Type $\ast$matrix\+Field, Font font, int piece\+ID, Color color, \mbox{\hyperlink{structpiece_info}{piece\+Info}} $\ast$info\+Pieces, const int $\ast$points, Texture2D back\+\_\+arrow)
+\begin{DoxyCompactList}\small\item\em print the game interface on single player \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{field_8h_a1d24d85738d8321e42f64fed7b0b55d0}{print\+Field\+\_\+multiplayer}} (const field\+Type $\ast$field\+\_\+1, const field\+Type $\ast$field\+\_\+2, Font font, int piece\+ID, Color color, \mbox{\hyperlink{structpiece_info}{piece\+Info}} $\ast$info\+Pieces, const int $\ast$points\+\_\+pl1, const int $\ast$points\+\_\+pl2, char $\ast$nickname1, char $\ast$nickname2, int turn, Texture2D back\+\_\+arrow)
+\begin{DoxyCompactList}\small\item\em print the game interface on multiplayer \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{field_8h_a623f0d8b65ee6e25db001645feb26303}{init\+Field}} (field\+Type $\ast$field)
+\begin{DoxyCompactList}\small\item\em initialises the playing field to EMPTY \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{field_8h_aaee3e4de24c8d91e58faba780bf22a68}{assign\+Piece\+To\+Field}} (field\+Type $\ast$field, \mbox{\hyperlink{structpiece_type}{piece\+Type}} $\ast$tetramino)
+\begin{DoxyCompactList}\small\item\em at each frame, assign the moving piece to the playing field matrix \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The following file contains all functions concerning the playing field. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{field_8h_aaee3e4de24c8d91e58faba780bf22a68}\label{field_8h_aaee3e4de24c8d91e58faba780bf22a68}} 
+\index{field.h@{field.h}!assignPieceToField@{assignPieceToField}}
+\index{assignPieceToField@{assignPieceToField}!field.h@{field.h}}
+\doxysubsubsection{\texorpdfstring{assignPieceToField()}{assignPieceToField()}}
+{\footnotesize\ttfamily void assign\+Piece\+To\+Field (\begin{DoxyParamCaption}\item[{field\+Type $\ast$}]{field,  }\item[{\mbox{\hyperlink{structpiece_type}{piece\+Type}} $\ast$}]{tetramino }\end{DoxyParamCaption})}
+
+
+
+at each frame, assign the moving piece to the playing field matrix 
+
+
+\begin{DoxyParams}{Parameters}
+{\em field} & \\
+\hline
+{\em tetramino} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{field_8h_a623f0d8b65ee6e25db001645feb26303}\label{field_8h_a623f0d8b65ee6e25db001645feb26303}} 
+\index{field.h@{field.h}!initField@{initField}}
+\index{initField@{initField}!field.h@{field.h}}
+\doxysubsubsection{\texorpdfstring{initField()}{initField()}}
+{\footnotesize\ttfamily void init\+Field (\begin{DoxyParamCaption}\item[{field\+Type $\ast$}]{field }\end{DoxyParamCaption})}
+
+
+
+initialises the playing field to EMPTY 
+
+
+\begin{DoxyParams}{Parameters}
+{\em field} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{field_8h_a2d4287324b04dc7063960a131a9ea4f8}\label{field_8h_a2d4287324b04dc7063960a131a9ea4f8}} 
+\index{field.h@{field.h}!printField@{printField}}
+\index{printField@{printField}!field.h@{field.h}}
+\doxysubsubsection{\texorpdfstring{printField()}{printField()}}
+{\footnotesize\ttfamily void print\+Field (\begin{DoxyParamCaption}\item[{const field\+Type $\ast$}]{matrix\+Field,  }\item[{Font}]{font,  }\item[{int}]{piece\+ID,  }\item[{Color}]{color,  }\item[{\mbox{\hyperlink{structpiece_info}{piece\+Info}} $\ast$}]{info\+Pieces,  }\item[{const int $\ast$}]{points,  }\item[{Texture2D}]{back\+\_\+arrow }\end{DoxyParamCaption})}
+
+
+
+print the game interface on single player 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix\+Field} & \\
+\hline
+{\em font} & \\
+\hline
+{\em piece\+ID} & \\
+\hline
+{\em color} & \\
+\hline
+{\em info\+Pieces} & \\
+\hline
+{\em points} & \\
+\hline
+{\em back\+\_\+arrow} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{field_8h_a1d24d85738d8321e42f64fed7b0b55d0}\label{field_8h_a1d24d85738d8321e42f64fed7b0b55d0}} 
+\index{field.h@{field.h}!printField\_multiplayer@{printField\_multiplayer}}
+\index{printField\_multiplayer@{printField\_multiplayer}!field.h@{field.h}}
+\doxysubsubsection{\texorpdfstring{printField\_multiplayer()}{printField\_multiplayer()}}
+{\footnotesize\ttfamily void print\+Field\+\_\+multiplayer (\begin{DoxyParamCaption}\item[{const field\+Type $\ast$}]{field\+\_\+1,  }\item[{const field\+Type $\ast$}]{field\+\_\+2,  }\item[{Font}]{font,  }\item[{int}]{piece\+ID,  }\item[{Color}]{color,  }\item[{\mbox{\hyperlink{structpiece_info}{piece\+Info}} $\ast$}]{info\+Pieces,  }\item[{const int $\ast$}]{points\+\_\+pl1,  }\item[{const int $\ast$}]{points\+\_\+pl2,  }\item[{char $\ast$}]{nickname1,  }\item[{char $\ast$}]{nickname2,  }\item[{int}]{turn,  }\item[{Texture2D}]{back\+\_\+arrow }\end{DoxyParamCaption})}
+
+
+
+print the game interface on multiplayer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em field\+\_\+1} & \\
+\hline
+{\em field\+\_\+2} & \\
+\hline
+{\em font} & \\
+\hline
+{\em piece\+ID} & \\
+\hline
+{\em color} & \\
+\hline
+{\em info\+Pieces} & \\
+\hline
+{\em points\+\_\+pl1} & \\
+\hline
+{\em points\+\_\+pl2} & \\
+\hline
+{\em nickname1} & \\
+\hline
+{\em nickname2} & \\
+\hline
+{\em turn} & \\
+\hline
+{\em back\+\_\+arrow} & \\
+\hline
+\end{DoxyParams}

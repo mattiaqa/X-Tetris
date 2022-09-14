@@ -1,0 +1,142 @@
+\hypertarget{menu_8h}{}\doxysection{/\+Users/mattiaquagliotto/\+Documents/\+Università/\+X\+\_\+\+Tetris/\+Libraries/menu.h File Reference}
+\label{menu_8h}\index{/Users/mattiaquagliotto/Documents/Università/X\_Tetris/Libraries/menu.h@{/Users/mattiaquagliotto/Documents/Università/X\_Tetris/Libraries/menu.h}}
+
+
+The following file contains all auxiliary functions for the menu of the game.  
+
+
+{\ttfamily \#include \char`\"{}../\+Libraries/data\+Structure.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Libraries/palette.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{menu_8h_a0fe1866b6e6bb262dd312fe6eb3b9f3b}{print\+Menu}} (game\+State $\ast$state, Font font)
+\begin{DoxyCompactList}\small\item\em print the menù \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{menu_8h_a39b89df320dad5cd93c01bce382c8620}{confirm\+Exit}} (game\+State $\ast$state, Font font)
+\begin{DoxyCompactList}\small\item\em print the exit confirmation screen \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{menu_8h_acd5704c59c9925e5420a0b28fb72fb91}{choose\+\_\+name}} (game\+State $\ast$state, char $\ast$nickname1, char $\ast$nickname2, int $\ast$letter\+Count\+\_\+pl1, int $\ast$letter\+Count\+\_\+pl2, Font font, int is\+\_\+multiplayer, Texture2D back\+\_\+arrow, char $\ast$error\+Text, int is\+\_\+pve)
+\begin{DoxyCompactList}\small\item\em print the name choice screen according to the game mode \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{menu_8h_a16cf974de6db40fd924fac583d6a911d}{print\+Commands}} (Font font, Font arrow\+Font, Texture2D back\+\_\+arrow, game\+State $\ast$state)
+\begin{DoxyCompactList}\small\item\em print the command screen \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{menu_8h_aa5685662a1361b8beea972fa8bb2ddf0}{choose\+\_\+multiplayer}} (Font font, Texture2D back\+\_\+arrow, game\+State $\ast$state, int $\ast$is\+\_\+multiplayer, int $\ast$is\+\_\+pve)
+\begin{DoxyCompactList}\small\item\em print the multiplayer mode selection screen \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The following file contains all auxiliary functions for the menu of the game. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{menu_8h_aa5685662a1361b8beea972fa8bb2ddf0}\label{menu_8h_aa5685662a1361b8beea972fa8bb2ddf0}} 
+\index{menu.h@{menu.h}!choose\_multiplayer@{choose\_multiplayer}}
+\index{choose\_multiplayer@{choose\_multiplayer}!menu.h@{menu.h}}
+\doxysubsubsection{\texorpdfstring{choose\_multiplayer()}{choose\_multiplayer()}}
+{\footnotesize\ttfamily void choose\+\_\+multiplayer (\begin{DoxyParamCaption}\item[{Font}]{font,  }\item[{Texture2D}]{back\+\_\+arrow,  }\item[{game\+State $\ast$}]{state,  }\item[{int $\ast$}]{is\+\_\+multiplayer,  }\item[{int $\ast$}]{is\+\_\+pve }\end{DoxyParamCaption})}
+
+
+
+print the multiplayer mode selection screen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & \\
+\hline
+{\em back\+\_\+arrow} & \\
+\hline
+{\em state} & \\
+\hline
+{\em is\+\_\+multiplayer} & \\
+\hline
+{\em is\+\_\+pve} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{menu_8h_acd5704c59c9925e5420a0b28fb72fb91}\label{menu_8h_acd5704c59c9925e5420a0b28fb72fb91}} 
+\index{menu.h@{menu.h}!choose\_name@{choose\_name}}
+\index{choose\_name@{choose\_name}!menu.h@{menu.h}}
+\doxysubsubsection{\texorpdfstring{choose\_name()}{choose\_name()}}
+{\footnotesize\ttfamily void choose\+\_\+name (\begin{DoxyParamCaption}\item[{game\+State $\ast$}]{state,  }\item[{char $\ast$}]{nickname1,  }\item[{char $\ast$}]{nickname2,  }\item[{int $\ast$}]{letter\+Count\+\_\+pl1,  }\item[{int $\ast$}]{letter\+Count\+\_\+pl2,  }\item[{Font}]{font,  }\item[{int}]{is\+\_\+multiplayer,  }\item[{Texture2D}]{back\+\_\+arrow,  }\item[{char $\ast$}]{error\+Text,  }\item[{int}]{is\+\_\+pve }\end{DoxyParamCaption})}
+
+
+
+print the name choice screen according to the game mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & \\
+\hline
+{\em nickname1} & \\
+\hline
+{\em nickname2} & \\
+\hline
+{\em letter\+Count\+\_\+pl1} & \\
+\hline
+{\em letter\+Count\+\_\+pl2} & \\
+\hline
+{\em font} & \\
+\hline
+{\em is\+\_\+multiplayer} & \\
+\hline
+{\em back\+\_\+arrow} & \\
+\hline
+{\em error\+Text} & \\
+\hline
+{\em is\+\_\+pve} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{menu_8h_a39b89df320dad5cd93c01bce382c8620}\label{menu_8h_a39b89df320dad5cd93c01bce382c8620}} 
+\index{menu.h@{menu.h}!confirmExit@{confirmExit}}
+\index{confirmExit@{confirmExit}!menu.h@{menu.h}}
+\doxysubsubsection{\texorpdfstring{confirmExit()}{confirmExit()}}
+{\footnotesize\ttfamily void confirm\+Exit (\begin{DoxyParamCaption}\item[{game\+State $\ast$}]{state,  }\item[{Font}]{font }\end{DoxyParamCaption})}
+
+
+
+print the exit confirmation screen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & \\
+\hline
+{\em font} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{menu_8h_a16cf974de6db40fd924fac583d6a911d}\label{menu_8h_a16cf974de6db40fd924fac583d6a911d}} 
+\index{menu.h@{menu.h}!printCommands@{printCommands}}
+\index{printCommands@{printCommands}!menu.h@{menu.h}}
+\doxysubsubsection{\texorpdfstring{printCommands()}{printCommands()}}
+{\footnotesize\ttfamily void print\+Commands (\begin{DoxyParamCaption}\item[{Font}]{font,  }\item[{Font}]{arrow\+Font,  }\item[{Texture2D}]{back\+\_\+arrow,  }\item[{game\+State $\ast$}]{state }\end{DoxyParamCaption})}
+
+
+
+print the command screen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em font} & \\
+\hline
+{\em arrow\+Font} & \\
+\hline
+{\em back\+\_\+arrow} & \\
+\hline
+{\em state} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{menu_8h_a0fe1866b6e6bb262dd312fe6eb3b9f3b}\label{menu_8h_a0fe1866b6e6bb262dd312fe6eb3b9f3b}} 
+\index{menu.h@{menu.h}!printMenu@{printMenu}}
+\index{printMenu@{printMenu}!menu.h@{menu.h}}
+\doxysubsubsection{\texorpdfstring{printMenu()}{printMenu()}}
+{\footnotesize\ttfamily void print\+Menu (\begin{DoxyParamCaption}\item[{game\+State $\ast$}]{state,  }\item[{Font}]{font }\end{DoxyParamCaption})}
+
+
+
+print the menù 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & \\
+\hline
+{\em font} & \\
+\hline
+\end{DoxyParams}

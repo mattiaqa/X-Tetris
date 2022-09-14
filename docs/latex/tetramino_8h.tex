@@ -1,0 +1,92 @@
+\hypertarget{tetramino_8h}{}\doxysection{/\+Users/mattiaquagliotto/\+Documents/\+Università/\+X\+\_\+\+Tetris/\+Libraries/tetramino.h File Reference}
+\label{tetramino_8h}\index{/Users/mattiaquagliotto/Documents/Università/X\_Tetris/Libraries/tetramino.h@{/Users/mattiaquagliotto/Documents/Università/X\_Tetris/Libraries/tetramino.h}}
+
+
+The following file contains all functions for the pieces.  
+
+
+{\ttfamily \#include \char`\"{}field.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Libraries/palette.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{tetramino_8h_abcb19e262f659959b3cd6b6afb2fca30}{init\+Piece}} (\mbox{\hyperlink{structpiece_type}{piece\+Type}} $\ast$piece)
+\begin{DoxyCompactList}\small\item\em set all the pieces\textquotesingle{}s block to empty \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetramino_8h_af7ec60b264c0d83886ae6013e1b67a78}{init\+Info}} (\mbox{\hyperlink{structpiece_info}{piece\+Info}} $\ast$info\+Pieces, int is\+\_\+multiplayer)
+\begin{DoxyCompactList}\small\item\em sets the number of playable pieces \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetramino_8h_a724e3d6a6379b69e4ce5b421d5ff0f9a}{get\+Tetramino\+From\+ID}} (int piece\+ID, \mbox{\hyperlink{structpiece_type}{piece\+Type}} $\ast$piece)
+\begin{DoxyCompactList}\small\item\em gets the pieces from ID \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tetramino_8h_a50d35dccc3b7a8c283dcb0f42c1d01d0}{turn\+Piece}} (\mbox{\hyperlink{structpiece_type}{piece\+Type}} $\ast$active\+Piece)
+\begin{DoxyCompactList}\small\item\em turn the pieces \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The following file contains all functions for the pieces. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{tetramino_8h_a724e3d6a6379b69e4ce5b421d5ff0f9a}\label{tetramino_8h_a724e3d6a6379b69e4ce5b421d5ff0f9a}} 
+\index{tetramino.h@{tetramino.h}!getTetraminoFromID@{getTetraminoFromID}}
+\index{getTetraminoFromID@{getTetraminoFromID}!tetramino.h@{tetramino.h}}
+\doxysubsubsection{\texorpdfstring{getTetraminoFromID()}{getTetraminoFromID()}}
+{\footnotesize\ttfamily void get\+Tetramino\+From\+ID (\begin{DoxyParamCaption}\item[{int}]{piece\+ID,  }\item[{\mbox{\hyperlink{structpiece_type}{piece\+Type}} $\ast$}]{piece }\end{DoxyParamCaption})}
+
+
+
+gets the pieces from ID 
+
+
+\begin{DoxyParams}{Parameters}
+{\em piece\+ID} & \\
+\hline
+{\em piece} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetramino_8h_af7ec60b264c0d83886ae6013e1b67a78}\label{tetramino_8h_af7ec60b264c0d83886ae6013e1b67a78}} 
+\index{tetramino.h@{tetramino.h}!initInfo@{initInfo}}
+\index{initInfo@{initInfo}!tetramino.h@{tetramino.h}}
+\doxysubsubsection{\texorpdfstring{initInfo()}{initInfo()}}
+{\footnotesize\ttfamily void init\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpiece_info}{piece\+Info}} $\ast$}]{info\+Pieces,  }\item[{int}]{is\+\_\+multiplayer }\end{DoxyParamCaption})}
+
+
+
+sets the number of playable pieces 
+
+
+\begin{DoxyParams}{Parameters}
+{\em info\+Pieces} & \\
+\hline
+{\em is\+\_\+multiplayer} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetramino_8h_abcb19e262f659959b3cd6b6afb2fca30}\label{tetramino_8h_abcb19e262f659959b3cd6b6afb2fca30}} 
+\index{tetramino.h@{tetramino.h}!initPiece@{initPiece}}
+\index{initPiece@{initPiece}!tetramino.h@{tetramino.h}}
+\doxysubsubsection{\texorpdfstring{initPiece()}{initPiece()}}
+{\footnotesize\ttfamily void init\+Piece (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpiece_type}{piece\+Type}} $\ast$}]{piece }\end{DoxyParamCaption})}
+
+
+
+set all the pieces\textquotesingle{}s block to empty 
+
+
+\begin{DoxyParams}{Parameters}
+{\em piece} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{tetramino_8h_a50d35dccc3b7a8c283dcb0f42c1d01d0}\label{tetramino_8h_a50d35dccc3b7a8c283dcb0f42c1d01d0}} 
+\index{tetramino.h@{tetramino.h}!turnPiece@{turnPiece}}
+\index{turnPiece@{turnPiece}!tetramino.h@{tetramino.h}}
+\doxysubsubsection{\texorpdfstring{turnPiece()}{turnPiece()}}
+{\footnotesize\ttfamily void turn\+Piece (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpiece_type}{piece\+Type}} $\ast$}]{active\+Piece }\end{DoxyParamCaption})}
+
+
+
+turn the pieces 
+
+
+\begin{DoxyParams}{Parameters}
+{\em active\+Piece} & \\
+\hline
+\end{DoxyParams}
