@@ -6,7 +6,7 @@ The three modes are accessible via an initial game menu, from which the scoreboa
 ![Menu](/screenshot/screenshot_1.png)
 
 ## Singleplayer
-Unlike the original Tetris, in X-Tetris the player is initially given 20 (or more, the choice is yours) pieces of each type, called tetramino, and a move consists of choosing which piece to play, where to drop it and with what rotation.
+Unlike the original Tetris, in X-Tetris the player is initially given 20 pieces of each type, called tetramino, and a move consists of choosing which piece to play, where to drop it and with what rotation.
 The playing field is 10 wide and 15 high. Once a tetramino has been placed, if one or more horizontal rows are filled in completely, these rows are deleted as in the original tetris.
 Removing one row is worth 1 point, removing two rows with one piece is worth 3 points, three rows 6 points, four rows 12 points.
 The game ends when the pieces run out or the player fails to place a tetramino in the playing field respecting the height limit.
