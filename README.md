@@ -3,7 +3,7 @@ X-Tetris is a reinterpretation of the traditional Tetris game written entirely i
 The game consists of three modes: singleplayer, multiplayer and player vs. CPU.
 The three modes are accessible via an initial game menu, from which the scoreboard and command section can also be accessed.
 
-![Menu](/Screenshot/screenshot_1.png)
+![Menu](/screenshot/screenshot_1.png)
 
 ## Singleplayer
 Unlike the original Tetris, in X-Tetris the player is initially given 20 (or more, the choice is yours) pieces of each type, called tetramino, and a move consists of choosing which piece to play, where to drop it and with what rotation.
@@ -11,7 +11,7 @@ The playing field is 10 wide and 15 high. Once a tetramino has been placed, if o
 Removing one row is worth 1 point, removing two rows with one piece is worth 3 points, three rows 6 points, four rows 12 points.
 The game ends when the pieces run out or the player fails to place a tetramino in the playing field respecting the height limit.
 
-![Singleplayer](/Screenshot/screenshot_2.png)
+![Singleplayer](/screenshot/screenshot_2.png)
 
 ## Multiplayer
 The two players play alternating turns each on their own playing field but drawing from the same set of tetramino pieces. In this mode you will have twice as many pieces at your disposal. In case a player deletes one or two lines simultaneously, the game proceeds as for the single player case. In case the player deletes 3 or more lines with a single move, the opponent's field is changed by reversing the corresponding number of lines in the lowest part of the playing field: an empty position becomes full and vice versa.
