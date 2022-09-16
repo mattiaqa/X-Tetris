@@ -7,9 +7,9 @@
 #include "../Libraries/field.h"
 #include "../Libraries/tetramino.h"
 
-void invertRow(fieldType *field, int deletedRow, int startRow){
+void invertRow(fieldType *field, int deletedRow){
     size_t i, j;
-    for(i = startRow - deletedRow; i < startRow - 1; ++i){
+    for(i = FIELD_ROW - 1; i > FIELD_ROW - deletedRow - 1; --i){
         for(j = 0; j < FIELD_COLS; ++j) {
             if (field[i * FIELD_COLS + j] == TETRAMINO)
                 field[i * FIELD_COLS + j] = EMPTY;
@@ -283,7 +283,7 @@ void checkFullRow(fieldType *field_player1, fieldType *field_player2, int *point
         blockLowering(field_player1, (int)deletedRow, (int)start);
 
     if(is_multiplayer && deletedRow > 2){
-        invertRow(field_player2, (int)deletedRow, (int)start);
+        invertRow(field_player2, (int)deletedRow);
     }
 
     if(deletedRow == 2)

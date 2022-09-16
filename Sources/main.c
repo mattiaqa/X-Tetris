@@ -175,8 +175,10 @@ int main() {
                     } else {
                         printGameOver(karmaticArcade, points_pl1, points_pl2, turn, is_multiplayer, nickname1,
                                       nickname2, backArrow_texture);
-                        if (IsKeyPressed(KEY_ENTER)) {
-                            state = MENU;
+                        if (GetMouseX() >= 920 && GetMouseX() <= 1000 && GetMouseY() >= 660 && GetMouseY() <= 740) {
+                            if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
+                                state = MENU;
+                            }
                         }
                     }
                 }

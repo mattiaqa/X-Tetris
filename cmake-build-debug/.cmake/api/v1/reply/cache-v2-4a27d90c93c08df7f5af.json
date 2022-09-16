@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/mattiaquagliotto/Documents/Universit\u00e0/X_Tetris/cmake-build-debug"
+			"value" : "/Users/mattiaquagliotto/Documents/Universit\u00e0/Projects/X_Tetris/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -419,7 +419,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/mattiaquagliotto/Documents/Universit\u00e0/X_Tetris"
+			"value" : "/Users/mattiaquagliotto/Documents/Universit\u00e0/Projects/X_Tetris"
 		},
 		{
 			"name" : "CMAKE_INSTALL_NAME_TOOL",
@@ -1455,7 +1455,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/mattiaquagliotto/Documents/Universit\u00e0/X_Tetris/cmake-build-debug"
+			"value" : "/Users/mattiaquagliotto/Documents/Universit\u00e0/Projects/X_Tetris/cmake-build-debug"
 		},
 		{
 			"name" : "X_Tetris_IS_TOP_LEVEL",
@@ -1479,7 +1479,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/mattiaquagliotto/Documents/Universit\u00e0/X_Tetris"
+			"value" : "/Users/mattiaquagliotto/Documents/Universit\u00e0/Projects/X_Tetris"
 		},
 		{
 			"name" : "__pkg_config_arguments_PC_RAYLIB",

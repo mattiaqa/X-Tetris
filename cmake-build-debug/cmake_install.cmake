@@ -1,4 +1,4 @@
-# Install script for directory: /Users/mattiaquagliotto/Documents/Università/X_Tetris
+# Install script for directory: /Users/mattiaquagliotto/Documents/Università/Projects/X_Tetris
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/mattiaquagliotto/Documents/Università/X_Tetris/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/mattiaquagliotto/Documents/Università/Projects/X_Tetris/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

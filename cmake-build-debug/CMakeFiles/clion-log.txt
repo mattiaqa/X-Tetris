@@ -1,4 +1,11 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/mattiaquagliotto/Documents/Università/X_Tetris -B /Users/mattiaquagliotto/Documents/Università/X_Tetris/cmake-build-debug
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/mattiaquagliotto/Documents/Università/Projects/X_Tetris -B /Users/mattiaquagliotto/Documents/Università/Projects/X_Tetris/cmake-build-debug
+-- The C compiler identification is AppleClang 14.0.0.14000029
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Found raylib: /opt/homebrew/Cellar/raylib/4.0.0/lib/libraylib.dylib (Required is at least version "4.0") 
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/mattiaquagliotto/Documents/Università/X_Tetris/cmake-build-debug
+-- Build files have been written to: /Users/mattiaquagliotto/Documents/Università/Projects/X_Tetris/cmake-build-debug
