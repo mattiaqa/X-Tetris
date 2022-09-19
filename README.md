@@ -1,5 +1,5 @@
 # X-Tetris
-X-Tetris is a reinterpretation of the traditional Tetris game written entirely in the ANSI C standard and was realised by myself and a university colleague.
+X-Tetris is a reinterpretation of the traditional Tetris game written entirely in the ANSI C standard and was realised by myself Mattia Quagliotto and Lorenzo Merlo ( [](lorenzomerlo039@gmail.com) ).
 The game consists of three modes: singleplayer, multiplayer and player vs. CPU.
 The three modes are accessible via an initial game menu, from which the scoreboard and command section can also be accessed.
 
